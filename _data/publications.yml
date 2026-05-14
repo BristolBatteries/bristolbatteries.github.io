@@ -1,0 +1,26 @@
+- title: "How to parameterise an equivalent-circuit empirical battery model from time-domain data"
+  year: 2026
+  url: "https://www.sciencedirect.com/science/article/pii/S221501612600083X"
+  authors:
+    - mark-blyth
+    - amey-gupta
+    - alastair-hales
+  summary: "This is a paper that did things."
+
+- title: "Thermal parameters fitted from electrical data enable lumped models of heterogeneous battery cells by predicting their effective temperature"
+  year: 2025
+  url: "https://www.sciencedirect.com/science/article/pii/S2352152X25035698"
+  authors:
+    - mark-blyth
+    - alastair-hales
+  summary: "This is a paper that did things."
+
+
+- title: "Advancing state estimation for lithium-ion batteries with hysteresis through systematic extended Kalman filter tuning"
+  year: 2024
+  url: "https://www.nature.com/articles/s41598-024-61596-0"
+  authors:
+    - jasper-knox
+    - mark-blyth
+    - alastair-hales
+  summary: "This is a paper that did things."
