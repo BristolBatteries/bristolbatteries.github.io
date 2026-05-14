@@ -4,22 +4,16 @@ layout: single
 permalink: /people/
 ---
 
-## Academics
+# Team
 
-### Alastair
+{% assign sorted_people = site.people | sort: "title" %}
 
-## Postdocs
+{% for person in sorted_people %}
 
-### Mark
+## [{{ person.title }}]({{ person.url }})
 
-## Current PhD Students
+**{{ person.role }}**
 
-### Nikolas
-### Amey
-### James
-### Aya
+{{ person.excerpt }}
 
-## Previous team members
-
-### Parvaneh
-### Previous interns?
+{% endfor %}

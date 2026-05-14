@@ -1,0 +1,47 @@
+---
+layout: single
+---
+
+{{ content }}
+
+{% if page.email or page.github or page.orcid %}
+## Links
+
+<ul>
+  {% if page.email %}
+    <li>Email: <a href="mailto:{{ page.email }}">{{ page.email }}</a></li>
+  {% endif %}
+
+  {% if page.github %}
+    <li>GitHub:
+      <a href="https://github.com/{{ page.github }}">
+        {{ page.github }}
+      </a>
+    </li>
+  {% endif %}
+
+  {% if page.orcid %}
+    <li>ORCID: <a href="https://orcid.org/{{ page.orcid }}">{{ page.orcid }}</a></li>
+  {% endif %}
+</ul>
+{% endif %}
+
+## Publications
+
+{% assign slug = page.slug %}
+{% assign found = false %}
+
+{% assign pubs = site.data.publications | sort: "year" | reverse %}
+
+{% for pub in pubs %}
+  {% if pub.authors contains slug %}
+    {% assign found = true %}
+
+- [{{ pub.title }}]({{ pub.url }}) ({{ pub.year }})
+
+  {% endif %}
+{% endfor %}
+
+{% unless found %}
+No publications listed yet.
+{% endunless %}
