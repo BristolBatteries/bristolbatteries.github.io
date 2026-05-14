@@ -2,6 +2,7 @@
 title: "Nikolas Loizou"
 layout: person
 permalink: /people/nikolas-loizou/
+group: "PhD Students"
 role: "PhD student"
 
 excerpt: >

@@ -2,6 +2,7 @@
 title: "Amey Gupta"
 layout: person
 permalink: /people/amey-gupta/
+group: "PhD Students"
 role: "PhD student"
 
 excerpt: >

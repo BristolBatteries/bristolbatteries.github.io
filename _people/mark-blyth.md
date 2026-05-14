@@ -2,6 +2,7 @@
 title: "Mark Blyth"
 layout: person
 permalink: /people/mark-blyth/
+group: "Postdoctoral Researchers"
 role: "Postdoc"
 
 excerpt: >

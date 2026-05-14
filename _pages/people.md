@@ -5,11 +5,20 @@ permalink: /people/
 classes: wide
 ---
 
+{% assign desired_groups = "Academic Staff|Postdoctoral Researchers|PhD Students" | split: "|" %}
+
+{% for group_name in desired_groups %}
+
+# {{ group_name }}
+
 <div class="grid__wrapper">
 
-{% assign sorted_people = site.people | sort: "title" %}
+{% assign people_in_group =
+  site.people | where: "group", group_name %}
 
-{% for person in sorted_people %}
+{% if people_in_group.size > 0 %}
+
+{% for person in people_in_group %}
 
 <div class="grid__item">
   <article
@@ -57,3 +66,5 @@ classes: wide
 {% endfor %}
 
 </div>
+
+{% endfor %}

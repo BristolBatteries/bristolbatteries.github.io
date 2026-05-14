@@ -2,6 +2,7 @@
 title: "Aya Rageh"
 layout: person
 permalink: /people/aya-rageh/
+group: "PhD Students"
 role: "PhD student"
 
 excerpt: >

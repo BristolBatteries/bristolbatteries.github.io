@@ -1,6 +1,19 @@
 ---
 title: "Alastair Hales"
+layout: person
 permalink: /people/alastair-hales/
+group: "Academic Staff"
 role: "Academic"
+
+excerpt: >
+  Team leader
+
+email: "alastair@example.com"
+github: ""
+scholar: ""
+orcid: ""
+
+image: /assets/images/bio-photo.jpg
 ---
-Interested in batteries and modelling.
+
+Alastair works on batteries.

@@ -2,6 +2,7 @@
 title: "James Bulman"
 layout: person
 permalink: /people/james-bulman/
+group: "PhD Students"
 role: "PhD student"
 
 excerpt: >
