@@ -4,6 +4,7 @@ layout: person
 permalink: /people/parvaneh-zare/
 group: "Postdoctoral Researchers"
 role: "Postdoc"
+status: previous   # NEW: current | previous
 
 excerpt: >
   Research on validation

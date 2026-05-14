@@ -4,6 +4,7 @@ layout: person
 permalink: /people/amey-gupta/
 group: "PhD Students"
 role: "PhD student"
+status: current   # NEW: current | previous
 
 excerpt: >
   Research on degradation

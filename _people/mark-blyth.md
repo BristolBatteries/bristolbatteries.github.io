@@ -4,6 +4,7 @@ layout: person
 permalink: /people/mark-blyth/
 group: "Postdoctoral Researchers"
 role: "Postdoc"
+status: current   # NEW: current | previous
 
 excerpt: >
   Research on battery modelling
