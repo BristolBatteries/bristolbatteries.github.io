@@ -1,0 +1,25 @@
+{% assign project = include.project %}
+
+<div class="archive__item">
+  <h3 class="archive__item-title">
+    <a href="{{ project.url }}">{{ project.title }}</a>
+  </h3>
+
+  <p class="archive__item-excerpt">
+    {{ project.excerpt }}
+  </p>
+
+  {% if project.people %}
+    <p class="archive__meta">
+      People:
+      {% for person_id in project.people %}
+        {% assign person = site.people | where: "slug", person_id | first %}
+        {% if person %}
+          <a href="{{ person.url }}">{{ person.title }}</a>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+          {{ person_id }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </p>
+  {% endif %}
+</div>

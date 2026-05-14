@@ -6,6 +6,8 @@
     - amey-gupta
     - alastair-hales
   summary: "This is a paper that did things."
+  projects:
+    - msm
 
 - title: "Thermal parameters fitted from electrical data enable lumped models of heterogeneous battery cells by predicting their effective temperature"
   year: 2025
@@ -14,6 +16,8 @@
     - mark-blyth
     - alastair-hales
   summary: "This is a paper that did things."
+  projects:
+    - msm
 
 
 - title: "Advancing state estimation for lithium-ion batteries with hysteresis through systematic extended Kalman filter tuning"

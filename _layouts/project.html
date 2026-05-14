@@ -1,0 +1,30 @@
+---
+layout: single
+---
+
+{{ content }}
+
+<hr>
+
+## People
+
+<ul>
+{% for pid in page.people %}
+  {% assign person = site.people | where: "slug", pid | first %}
+  {% if person %}
+    <li><a href="{{ person.url }}">{{ person.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+## Publications
+
+<ul>
+{% assign pubs = site.data.publications | where_exp: "p", "p.projects contains page.slug" %}
+
+{% for pub in pubs %}
+  <li>
+    <a href="{{ pub.url }}">{{ pub.title }}</a> ({{ pub.year }})
+  </li>
+{% endfor %}
+</ul>
