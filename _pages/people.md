@@ -9,14 +9,14 @@ classes: wide
 
 {% for group_name in desired_groups %}
 
-# {{ group_name }}
-
-<div class="grid__wrapper">
-
 {% assign people_in_group =
   site.people | where: "group", group_name %}
 
 {% if people_in_group.size > 0 %}
+
+# {{ group_name }}
+
+<div class="grid__wrapper">
 
 {% for person in people_in_group %}
 
@@ -66,5 +66,7 @@ classes: wide
 {% endfor %}
 
 </div>
+
+{% endif %}
 
 {% endfor %}
