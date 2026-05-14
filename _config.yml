@@ -36,6 +36,9 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 collections:
   people:
     output: true
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 include:
   - _pages
