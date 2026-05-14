@@ -4,6 +4,7 @@ layout: person
 permalink: /people/alastair-hales/
 group: "Academic Staff"
 role: "Academic"
+status: current   # NEW: current | previous
 
 excerpt: >
   Team leader

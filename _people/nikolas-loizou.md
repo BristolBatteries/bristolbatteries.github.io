@@ -4,6 +4,7 @@ layout: person
 permalink: /people/nikolas-loizou/
 group: "PhD Students"
 role: "PhD student"
+status: current   # NEW: current | previous
 
 excerpt: >
   Research on degradation
