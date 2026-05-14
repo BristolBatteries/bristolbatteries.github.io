@@ -31,7 +31,8 @@ layout: single
 {% assign slug = page.slug %}
 {% assign found = false %}
 
-{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign pubs = site.data.publications | default: empty %}
+{% assign pubs = pubs | sort: "year" | reverse %}
 
 {% for pub in pubs %}
   {% if pub.authors contains slug %}
