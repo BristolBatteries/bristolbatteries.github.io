@@ -7,7 +7,7 @@ role: "Postdoc"
 status: current   # NEW: current | previous
 
 excerpt: >
-  Research on battery modelling
+  Coupled electro-thermal models of heterogeneous cells
 
 email: "mark@example.com"
 github: "MarkBlyth"
