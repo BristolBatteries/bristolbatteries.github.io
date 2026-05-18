@@ -4,11 +4,11 @@ layout: single
 
 {{ content }}
 
-{% if page.email or page.github or page.orcid %}
-
 {% capture page_md %}
 
 ## Links
+
+{% if page.email or page.github or page.orcid %}
 
 {% if page.email %}
 - Email: [{{ page.email }}](mailto:{{ page.email }})
@@ -20,6 +20,8 @@ layout: single
 
 {% if page.orcid %}
 - ORCID: [{{ page.orcid }}](https://orcid.org/{{ page.orcid }})
+{% endif %}
+
 {% endif %}
 
 ## Publications
@@ -47,7 +49,7 @@ No publications listed yet.
 
 {% endunless %}
 
-
 {% endcapture %}
 
 {{ page_md | markdownify }}
+
