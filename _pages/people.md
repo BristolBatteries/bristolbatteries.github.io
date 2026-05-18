@@ -48,10 +48,11 @@ classes: wide
 </div>
 
 {% endif %}
-
 {% endfor %}
 
 </div>
+
+<div style="clear: both;"></div>
 
 {% endif %}
 
