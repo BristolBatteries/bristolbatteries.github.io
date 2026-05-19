@@ -64,4 +64,41 @@
     - "Gloria Bosi"
     - alastair-hales
   summary: "This paper numerically demonstrates that phase-change materials can provide passive, low-mass thermal management for electric aircraft battery packs, with latent heat of fusion, rather than thermal conductivity, being the key property for maintaining ideal temperatures during flight."
-  
+
+  - title: "Thermal Management Optimization for Large-Format Lithium-Ion Battery Using Cell Cooling Coefficient"
+  year: 2022
+  url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
+  authors:
+    - "Yingchen Xie"
+    - alastair-hales
+    - "Ruihe Li"
+    - "Xuning Feng"
+    - "Yatish Patel"
+    - "Gregory Offer"
+  summary: "This paper evaluates tab cooling for large-format lithium-ion pouch cells using the Cell Cooling Coefficient, showing that tab thermal resistance limits heat rejection but that increasing tab thickness can significantly improve cooling and reduce cell-wide temperature gradients."
+ 
+ - title: "Towards Optimised Cell Design of Thin Film Silicon-Based Solid-State Batteries via Modelling and Experimental Characterisation"
+  year: 2022
+  url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
+  authors:
+    - "Pooja Vadhva"
+    - "Adam Boyce"
+    - alastair-hales
+    - "Mei-Chin Pang"
+    - "Anisha Patel"
+    - "Paul Shearing"
+    - "Gregory Offer"
+    - "Alexander Rettie"
+  summary: "This paper develops and experimentally validates a 2D electro-chemo-mechanical model of a silicon-based thin-film solid-state battery, showing how electrode expansion drives stress, strain and plastic deformation during cycling to inform improved cell design and optimisation."
+
+ - title: "Thermal evaluation of lithium-ion batteries: Defining the cylindrical cell cooling coefficient"
+  year: 2022
+  url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
+  authors:
+    - "Waseem Marzook"
+    - alastair-hales
+    - "Yatish Patel"
+    - "Gregory Offer"
+    - "Monica Marinescu"
+  summary: "This paper defines and measures a base-cooling Cell Cooling Coefficient for cylindrical lithium-ion cells, showing how CCC and heat generation together can inform cell selection and thermal management design."
+
