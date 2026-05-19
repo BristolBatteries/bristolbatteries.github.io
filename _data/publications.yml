@@ -55,7 +55,7 @@
   summary: "This review assesses the recycling and second-life pathways available for end-of-life EV batteries, highlighting the need for clearer decision criteria, simplified processes, standardised battery design and supportive policy to improve circularity and sustainability."
 
 
-  - title: "A Numerical Study of the Suitability of Phase-Change Materials for Battery Thermal Management in Flight Applications"
+- title: "A Numerical Study of the Suitability of Phase-Change Materials for Battery Thermal Management in Flight Applications"
   year: 2023
   url: "https://www.mdpi.com/2032-6653/14/1/15"
   authors:
@@ -64,8 +64,10 @@
     - "Gloria Bosi"
     - alastair-hales
   summary: "This paper numerically demonstrates that phase-change materials can provide passive, low-mass thermal management for electric aircraft battery packs, with latent heat of fusion, rather than thermal conductivity, being the key property for maintaining ideal temperatures during flight."
-
-  - title: "Thermal Management Optimization for Large-Format Lithium-Ion Battery Using Cell Cooling Coefficient"
+  projects:
+    - batmaa
+    
+- title: "Thermal Management Optimization for Large-Format Lithium-Ion Battery Using Cell Cooling Coefficient"
   year: 2022
   url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
   authors:
@@ -77,7 +79,7 @@
     - "Gregory Offer"
   summary: "This paper evaluates tab cooling for large-format lithium-ion pouch cells using the Cell Cooling Coefficient, showing that tab thermal resistance limits heat rejection but that increasing tab thickness can significantly improve cooling and reduce cell-wide temperature gradients."
  
- - title: "Towards Optimised Cell Design of Thin Film Silicon-Based Solid-State Batteries via Modelling and Experimental Characterisation"
+- title: "Towards Optimised Cell Design of Thin Film Silicon-Based Solid-State Batteries via Modelling and Experimental Characterisation"
   year: 2022
   url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
   authors:
@@ -91,7 +93,7 @@
     - "Alexander Rettie"
   summary: "This paper develops and experimentally validates a 2D electro-chemo-mechanical model of a silicon-based thin-film solid-state battery, showing how electrode expansion drives stress, strain and plastic deformation during cycling to inform improved cell design and optimisation."
 
- - title: "Thermal evaluation of lithium-ion batteries: Defining the cylindrical cell cooling coefficient"
+- title: "Thermal evaluation of lithium-ion batteries: Defining the cylindrical cell cooling coefficient"
   year: 2022
   url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
   authors:
