@@ -28,3 +28,15 @@
     - mark-blyth
     - alastair-hales
   summary: "This is a paper that did things."
+
+- title: "The Cell Cooling Coefficient as a design tool to optimise thermal management of lithium-ion cells in battery packs"
+  year: 2020
+  url: "https://www.sciencedirect.com/science/article/pii/S2590116820300473"
+  authors:
+    - alastair-hales
+    - "Ryan Prosser"
+    - "Laura Bravo Diaz"
+    - "Gavin White"
+    - "Yatish Patel"
+    - "Gregory Offer"
+  summary: "CCC"
