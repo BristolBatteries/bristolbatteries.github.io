@@ -112,3 +112,9 @@
     - alastair-hales
     - "Yatish Patel"
   summary: "This paper presents AMPP, a battery model parametrisation procedure that delivers equivalent circuit model accuracy comparable to GITT while reducing testing time by around 90%, with strong performance under conductive temperature control."
+  projects:
+    - tht
+
+
+
+
