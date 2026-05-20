@@ -104,3 +104,11 @@
     - "Monica Marinescu"
   summary: "This paper defines and measures a base-cooling Cell Cooling Coefficient for cylindrical lithium-ion cells, showing how CCC and heat generation together can inform cell selection and thermal management design."
 
+- title: "A Novel Experimental Technique for Use in Fast Parameterisation of Equivalent Circuit Models for Lithium-Ion Batteries"
+  year: 2022
+  url: "https://www.mdpi.com/2313-0105/8/9/125"
+  authors:
+    - "Mohammad Amin Samieian"
+    - alastair-hales
+    - "Yatish Patel"
+  summary: "This paper presents AMPP, a battery model parametrisation procedure that delivers equivalent circuit model accuracy comparable to GITT while reducing testing time by around 90%, with strong performance under conductive temperature control."
