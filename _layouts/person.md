@@ -24,7 +24,7 @@ layout: single
 
 {% endif %}
 
-## Publications
+## Relevant publications
 
 {% assign slug = page.slug %}
 {% assign found = false %}
