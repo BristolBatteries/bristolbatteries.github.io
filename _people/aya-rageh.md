@@ -14,7 +14,7 @@ github: "aya-rageh"
 scholar: ""
 orcid: "0009-0003-2088-7489"
 
-image: /assets/images/bio-photo.jpg
+image: /assets/images/people/AyaRageh.jpg
 ---
 
 Aya is conducting a PhD on how Sodium-ion (Na-ion) batteries could provide a more sustainable alternative to Lithium Iron Phosphate (LFP) batteries for electric vehicles. Her research investigates not only the environmental impact of producing, using, and recycling these batteries, but also how their performance changes under different temperatures. By combining battery ageing experiments with life cycle assessment (LCA), her work provides a more realistic picture of long-term battery sustainability, including how both battery capacity and power capability degrade over time.
