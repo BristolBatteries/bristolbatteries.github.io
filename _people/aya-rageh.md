@@ -7,7 +7,8 @@ role: "PhD student"
 status: current   # NEW: current | previous
 
 excerpt: >
-  Research on degradation
+ State of Health estimation of lithium-ion (LFP) and sodium-ion (NFM) batteries in electric vehicles based on geographical location as
+well as conducting a cradle to grave life cycle assessment on both batteries.
 
 email: "a.rageh@bristol.ac.uk"
 github: "aya-rageh"
