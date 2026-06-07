@@ -9,10 +9,10 @@ status: current   # NEW: current | previous
 excerpt: >
   State of Health estimation of lithium-ion (LFP) and sodium-ion (NFM) batteries in electric vehicles based on geographical location as well as conducting a cradle to grave life cycle assessment on both batteries.
 
-email: "aya@example.com"
-github: ""
+email: "a.rageh@bristol.ac.uk"
+github: "aya-rageh"
 scholar: ""
-orcid: ""
+orcid: "0009-0003-2088-7489"
 
 image: /assets/images/bio-photo.jpg
 ---
