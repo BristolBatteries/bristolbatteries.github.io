@@ -1,7 +1,7 @@
 ---
 title: "Joelle Booth"
 layout: person
-permalink: /people/parvaneh-zare/
+permalink: /people/joelle-booth/
 group: "Interns"
 role: "Intern"
 status: previous   # NEW: current | previous
