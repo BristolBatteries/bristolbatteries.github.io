@@ -12,7 +12,7 @@ excerpt: >
 
 image: /assets/images/bio-photo.jpg
 ---
-Joelle completed a research internship funded by the Faraday Institution (FUSE) focused on the calendar ageing behaviour of Sodium-ion (Na-ion) batteries. As part of the project, she designed and built a dedicated test rig for long-term calendar ageing experiments, providing the foundation for ongoing testing within the research group. This work was particularly relevant because calendar ageing in Na-ion batteries is still not well understood, with limited existing research due to the technology only recently gaining wider attention.
+Joelle completed a research internship, funded by the faculty of engineering, focused on the calendar ageing behaviour of Sodium-ion (Na-ion) batteries. As part of the project, she designed and built a dedicated test rig for long-term calendar ageing experiments, providing the foundation for ongoing testing within the research group. This work was particularly relevant because calendar ageing in Na-ion batteries is still not well understood, with limited existing research due to the technology only recently gaining wider attention.
 
 Alongside the experimental setup, she investigated degradation mechanisms in Na-ion batteries and reviewed how factors such as temperature and state of charge influence ageing over time. Based on this, she developed a characterisation procedure for the cells undergoing calendar ageing, including selecting the temperatures and states of charge used during testing.
 
