@@ -66,7 +66,7 @@ plugins:
 
 author:
   name   : "Bristol Batteries"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/logo.jpg"
   bio    : "Representing battery research at the University of Bristol"
   links:
     - label: "Website"
