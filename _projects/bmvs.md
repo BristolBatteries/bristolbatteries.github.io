@@ -1,7 +1,7 @@
 ---
-title: "Battery model validation standards"
+title: "BMVS"
 status: past   # current | past
-excerpt: "Defining standards for validating battery models"
+excerpt: "Battery model validation standards"
 
 people:
   - alastair-hales

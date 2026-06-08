@@ -19,7 +19,6 @@
   projects:
     - msm
 
-
 - title: "Advancing state estimation for lithium-ion batteries with hysteresis through systematic extended Kalman filter tuning"
   year: 2024
   url: "https://www.nature.com/articles/s41598-024-61596-0"
@@ -27,4 +26,95 @@
     - jasper-knox
     - mark-blyth
     - alastair-hales
-  summary: "This is a paper that did things."
+  summary: "This paper shows that hysteretic reduced-order battery models combined with adaptive extended Kalman filters significantly improve lithium-ion battery state-of-charge estimation, reducing both voltage prediction error and SOC estimation error compared with standard industry approaches."
+
+
+- title: "A Standardised Potentiometric Method for the Effective Parameterisation of Reversible Heating in a Lithium-Ion Cell"
+  year: 2024
+  url: "https://iopscience.iop.org/article/10.1149/1945-7111/ad4918/meta"
+  authors:
+    - alastair-hales
+    - james-bulman
+  summary: "This paper presents a faster, standardised method for measuring entropy coefficients in lithium-ion cells, improving reversible heat generation modelling while identifying voltage relaxation effects that are important for accurate temperature prediction, safety and lifetime assessment."
+  projects:
+    - tht
+
+- title: "Lithium-ion battery second life: pathways, challenges and outlook"
+  year: 2024
+  url: "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2024.1358417/full"
+  authors:
+    - "Anisha Patel"
+    - "Laura Lander"
+    - "Jyoti Ahuja"
+    - james-bulman
+    - "James Lum"
+    - "Julian Pope"
+    - alastair-hales
+    - "Yatish Patel"
+    - "Jacqueline Edge"
+  summary: "This review assesses the recycling and second-life pathways available for end-of-life EV batteries, highlighting the need for clearer decision criteria, simplified processes, standardised battery design and supportive policy to improve circularity and sustainability."
+
+
+- title: "A Numerical Study of the Suitability of Phase-Change Materials for Battery Thermal Management in Flight Applications"
+  year: 2023
+  url: "https://www.mdpi.com/2032-6653/14/1/15"
+  authors:
+    - "Daeyeun Kim"
+    - "Saber Abdallah"
+    - "Gloria Bosi"
+    - alastair-hales
+  summary: "This paper numerically demonstrates that phase-change materials can provide passive, low-mass thermal management for electric aircraft battery packs, with latent heat of fusion, rather than thermal conductivity, being the key property for maintaining ideal temperatures during flight."
+  projects:
+    - batmaa
+    
+- title: "Thermal Management Optimization for Large-Format Lithium-Ion Battery Using Cell Cooling Coefficient"
+  year: 2022
+  url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
+  authors:
+    - "Yingchen Xie"
+    - alastair-hales
+    - "Ruihe Li"
+    - "Xuning Feng"
+    - "Yatish Patel"
+    - "Gregory Offer"
+  summary: "This paper evaluates tab cooling for large-format lithium-ion pouch cells using the Cell Cooling Coefficient, showing that tab thermal resistance limits heat rejection but that increasing tab thickness can significantly improve cooling and reduce cell-wide temperature gradients."
+ 
+- title: "Towards Optimised Cell Design of Thin Film Silicon-Based Solid-State Batteries via Modelling and Experimental Characterisation"
+  year: 2022
+  url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
+  authors:
+    - "Pooja Vadhva"
+    - "Adam Boyce"
+    - alastair-hales
+    - "Mei-Chin Pang"
+    - "Anisha Patel"
+    - "Paul Shearing"
+    - "Gregory Offer"
+    - "Alexander Rettie"
+  summary: "This paper develops and experimentally validates a 2D electro-chemo-mechanical model of a silicon-based thin-film solid-state battery, showing how electrode expansion drives stress, strain and plastic deformation during cycling to inform improved cell design and optimisation."
+
+- title: "Thermal evaluation of lithium-ion batteries: Defining the cylindrical cell cooling coefficient"
+  year: 2022
+  url: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9d08/meta"
+  authors:
+    - "Waseem Marzook"
+    - alastair-hales
+    - "Yatish Patel"
+    - "Gregory Offer"
+    - "Monica Marinescu"
+  summary: "This paper defines and measures a base-cooling Cell Cooling Coefficient for cylindrical lithium-ion cells, showing how CCC and heat generation together can inform cell selection and thermal management design."
+
+- title: "A Novel Experimental Technique for Use in Fast Parameterisation of Equivalent Circuit Models for Lithium-Ion Batteries"
+  year: 2022
+  url: "https://www.mdpi.com/2313-0105/8/9/125"
+  authors:
+    - "Mohammad Amin Samieian"
+    - alastair-hales
+    - "Yatish Patel"
+  summary: "This paper presents AMPP, a battery model parametrisation procedure that delivers equivalent circuit model accuracy comparable to GITT while reducing testing time by around 90%, with strong performance under conductive temperature control."
+  projects:
+    - tht
+
+
+
+
