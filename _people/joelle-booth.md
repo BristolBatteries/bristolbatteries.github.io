@@ -9,10 +9,6 @@ status: previous   # NEW: current | previous
 excerpt: >
   Research on sodium-ion batteries
 
-email: ""
-github: ""
-scholar: ""
-orcid: ""
 
 image: /assets/images/bio-photo.jpg
 ---
