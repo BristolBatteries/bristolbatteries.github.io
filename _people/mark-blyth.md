@@ -9,7 +9,7 @@ status: current   # NEW: current | previous
 excerpt: >
   Coupled electro-thermal models of heterogeneous cells
 
-email: "mark@example.com"
+email: "m.blyth@bristol.ac.uk"
 github: "MarkBlyth"
 scholar: "https://scholar.google.com/citations?user=iBb9lPgAAAAJ&hl=en&oi=ao"
 orcid: "0000-0001-8890-7800"
