@@ -59,9 +59,9 @@
   year: 2023
   url: "https://www.mdpi.com/2032-6653/14/1/15"
   authors:
-    - "Daeyeun Kim"
+    - daeyeun-kim
     - "Saber Abdallah"
-    - "Gloria Bosi"
+    - gloria-bosi
     - alastair-hales
   summary: "This paper numerically demonstrates that phase-change materials can provide passive, low-mass thermal management for electric aircraft battery packs, with latent heat of fusion, rather than thermal conductivity, being the key property for maintaining ideal temperatures during flight."
   projects:
