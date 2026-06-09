@@ -9,10 +9,6 @@ status: previous   # NEW: current | previous
 excerpt: >
   Numerical modelling; phase change materials
 
-email: ""
-github: ""
-scholar: ""
-orcid: ""
 
 image: /assets/images/people/daeyeun.jpg
 ---
