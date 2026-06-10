@@ -1,7 +1,7 @@
 ---
 title: "SESA"
 status: past   # current | past
-excerpt: "Stationary energy storage applications"
+excerpt: "Stationary Energy Storage Applications"
 
 people:
   - alastair-hales
