@@ -6,9 +6,9 @@ layout: single
 
 {% capture page_md %}
 
-## Links
-
 {% if page.email or page.github or page.orcid %}
+
+## Links
 
 {% if page.email %}
 - Email: [{{ page.email }}](mailto:{{ page.email }})
@@ -24,30 +24,28 @@ layout: single
 
 {% endif %}
 
-## Relevant publications
+
 
 {% assign slug = page.slug %}
-{% assign found = false %}
-
 {% assign pubs = site.data.publications | default: empty %}
 {% assign pubs = pubs | sort: "year" | reverse %}
 
+{% assign found = false %}
 {% for pub in pubs %}
-
 {% if pub.authors contains slug %}
 {% assign found = true %}
-
-- [{{ pub.title }}]({{ pub.url }}) ({{ pub.year }})
-
+{% break %}
 {% endif %}
-
 {% endfor %}
 
-{% unless found %}
-
-No publications listed yet.
-
-{% endunless %}
+{% if found %}
+## Relevant publications
+{% for pub in pubs %}
+{% if pub.authors contains slug %}
+* [{{ pub.title }}]({{ pub.url }}) ({{ pub.year }})
+  {% endif %}
+  {% endfor %}
+  {% endif %}
 
 {% endcapture %}
 
