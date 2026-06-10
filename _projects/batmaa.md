@@ -5,8 +5,8 @@ excerpt: "Battery Thermal Management for Aviation Applications"
 
 people:
   - alastair-hales
-  - "Daeyeun Kim"
-  - "Gloria Bosi"
+  - -daeyeun-kim
+  - -gloria-bosi-
 
 tags:
   - modelling
