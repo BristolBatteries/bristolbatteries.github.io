@@ -38,6 +38,7 @@
   summary: "This paper presents a faster, standardised method for measuring entropy coefficients in lithium-ion cells, improving reversible heat generation modelling while identifying voltage relaxation effects that are important for accurate temperature prediction, safety and lifetime assessment."
   projects:
     - tht
+    - vatbat
 
 - title: "Lithium-ion battery second life: pathways, challenges and outlook"
   year: 2024
