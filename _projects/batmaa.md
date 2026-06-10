@@ -1,12 +1,12 @@
 ---
-title: "BATMAA"
+title: "BaTMAA"
 status: past   # current | past
 excerpt: "Battery Thermal Management for Aviation Applications"
 
 people:
   - alastair-hales
-  - -daeyeun-kim
-  - -gloria-bosi-
+  - daeyeun-kim
+  - gloria-bosi
 
 tags:
   - modelling
