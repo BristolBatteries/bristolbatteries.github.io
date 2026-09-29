@@ -10,7 +10,7 @@ excerpt: >
   Research on sodium-ion batteries
 
 
-image: /assets/images/bio-photo.jpg
+image: /assets/images/Joelle.png
 ---
 Joelle completed a research internship, funded by the faculty of engineering, focused on the calendar ageing behaviour of Sodium-ion (Na-ion) batteries. As part of the project, she designed and built a dedicated test rig for long-term calendar ageing experiments, providing the foundation for ongoing testing within the research group. This work was particularly relevant because calendar ageing in Na-ion batteries is still not well understood, with limited existing research due to the technology only recently gaining wider attention.
 
