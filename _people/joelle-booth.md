@@ -9,6 +9,7 @@ status: previous   # NEW: current | previous
 excerpt: >
   Research on sodium-ion batteries
 
+email: "222jyb@gmail.com"
 
 image: /assets/images/people/Joelle.png
 ---
