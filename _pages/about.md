@@ -6,7 +6,7 @@ layout: page
 
 ## Who We Are
 
-Bristol Energy Systems is a research group in the [Department of Electrical and Electronic Engineering and Materials (EEME)](https://www.bristol.ac.uk/engineering/research/eeme/) at the University of Bristol. We work across battery systems, solar energy, and energy access — tackling the modelling, characterisation, and control challenges that connect laboratory science to real-world engineering.
+Bristol Energy Systems is a research group in the [School of Electrical and Electronic Engineering (EEME)](https://www.bristol.ac.uk/engineering/research/eeme/) at the University of Bristol. We work across battery systems, solar energy, and energy access — tackling the modelling, characterisation, and control challenges that connect laboratory science to real-world engineering.
 
 ## What We Do
 
@@ -21,5 +21,5 @@ We value open science. Where possible, our code and data are shared openly. We a
 For general enquiries, please contact the group lead via the [People](/people/) page.
 
 University of Bristol  
-Department of Electrical and Electronic Engineering and Materials  
+School of Electrical and Electronic Engineering
 Bristol, UK
