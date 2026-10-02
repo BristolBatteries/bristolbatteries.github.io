@@ -1,0 +1,112 @@
+---
+layout: default
+---
+<div class="page-content">
+  <div class="container">
+    <div class="person-profile">
+
+      <!-- Sidebar -->
+      <aside class="person-sidebar">
+
+        {% if page.image %}
+          <img class="person-photo"
+               src="{{ page.image | relative_url }}"
+               alt="{{ page.title }}">
+        {% endif %}
+
+        <div class="person-contact">
+
+          {% if page.email %}
+          <div class="person-contact-item">
+            <span>✉</span>
+            <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+          </div>
+          {% endif %}
+
+          {% if page.github %}
+          <div class="person-contact-item">
+            <span>⌥</span>
+            {% if page.github contains "github.com" %}
+              <a href="{{ page.github }}" target="_blank" rel="noopener">GitHub</a>
+            {% else %}
+              <a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener">{{ page.github }}</a>
+            {% endif %}
+          </div>
+          {% endif %}
+
+          {% if page.scholar %}
+          <div class="person-contact-item">
+            <span>🎓</span>
+            <a href="{{ page.scholar }}" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+          {% endif %}
+
+          {% if page.orcid %}
+          <div class="person-contact-item">
+            <span>◎</span>
+            {% if page.orcid contains "orcid.org" %}
+              <a href="{{ page.orcid }}" target="_blank" rel="noopener">ORCID</a>
+            {% else %}
+              <a href="https://orcid.org/{{ page.orcid }}" target="_blank" rel="noopener">ORCID</a>
+            {% endif %}
+          </div>
+          {% endif %}
+
+        </div>
+
+      </aside>
+
+      <!-- Main content -->
+      <div class="person-main">
+
+        <h1>{{ page.title }}</h1>
+
+        {% if page.role %}
+          <span class="role-badge">{{ page.role }}</span>
+        {% endif %}
+
+        <div class="prose">
+          {{ content }}
+        </div>
+
+        <!-- Publications by this person -->
+        {% assign slug = page.slug %}
+        {% assign all_pubs = site.data.publications | sort: "year" | reverse %}
+        {% assign person_pubs = "" | split: "" %}
+
+        {% for pub in all_pubs %}
+          {% if pub.authors contains slug %}
+            {% assign person_pubs = person_pubs | push: pub %}
+          {% endif %}
+        {% endfor %}
+
+        {% if person_pubs.size > 0 %}
+        <div class="mt-8">
+          <h2 class="pub-year-heading">Publications</h2>
+          <div class="pub-list">
+            {% for pub in person_pubs %}
+            <div class="pub-item">
+              <p class="pub-title">
+                <a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+              </p>
+              <p class="pub-authors">
+                {% for author in pub.authors %}
+                  {% assign ap = site.people | where: "slug", author | first %}
+                  {% if ap %}
+                    <a href="{{ ap.url | relative_url }}">{{ ap.title }}</a>{% unless forloop.last %}, {% endunless %}
+                  {% else %}
+                    {{ author }}{% unless forloop.last %}, {% endunless %}
+                  {% endif %}
+                {% endfor %}
+                &middot; {{ pub.year }}
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</div>

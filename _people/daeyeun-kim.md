@@ -4,11 +4,13 @@ layout: person
 permalink: /people/daeyeun-kim/
 group: "Intern"
 role: "Intern"
-status: previous   # NEW: current | previous
+status: previous
+
+themes:
+  - batteries
 
 excerpt: >
   Numerical modelling; phase change materials
-
 
 image: /assets/images/people/daeyeun.jpg
 ---

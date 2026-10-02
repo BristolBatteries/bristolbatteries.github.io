@@ -1,6 +1,7 @@
 ---
 title: "BMVS"
-status: past   # current | past
+status: past
+theme: batteries
 excerpt: "Battery Model Validation Standards"
 
 people:

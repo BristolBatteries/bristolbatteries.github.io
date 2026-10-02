@@ -4,7 +4,11 @@ layout: person
 permalink: /people/alastair-hales/
 group: "Academic Staff"
 role: "Academic"
-status: current   # NEW: current | previous
+status: current
+
+themes:
+  - batteries
+  - energy-access
 
 excerpt: >
   Team lead; thermal and characterisation background
@@ -17,4 +21,4 @@ orcid: "https://orcid.org/0000-0001-6126-6986"
 image: /assets/images/people/alastair.jpg
 ---
 
-Alastair's research is centred around improving the performance and sustainability of battery applications, from the commercially available technology. This includes the development of cell-level and pack-level modelling methods, enhancing understanding in the relationship between temperature and performance, understanding operational degradation and pack-level diagnostics to improve second-life technology, and examining the environmental and societal benefits of sodium-ion battery technology. Alastair's research background is in experimental design, heat transfer and computational fluid dynamics.   
+Alastair's research is centred around improving the performance and sustainability of battery applications, from the commercially available technology. This includes the development of cell-level and pack-level modelling methods, enhancing understanding in the relationship between temperature and performance, understanding operational degradation and pack-level diagnostics to improve second-life technology, and examining the environmental and societal benefits of sodium-ion battery technology. Alastair's research background is in experimental design, heat transfer and computational fluid dynamics.

@@ -1,8 +1,25 @@
 ---
-permalink: /about/
 title: "About"
+permalink: /about/
+layout: page
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+## Who We Are
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Bristol Energy Systems is a research group in the [Department of Electrical and Electronic Engineering and Materials (EEME)](https://www.bristol.ac.uk/engineering/research/eeme/) at the University of Bristol. We work across battery systems, solar energy, and energy access — tackling the modelling, characterisation, and control challenges that connect laboratory science to real-world engineering.
+
+## What We Do
+
+Our group brings together experimental, computational, and data-driven methods to address applied problems in energy systems. We build and validate mathematical models, develop software tools, design experiments, and collaborate with academic and industrial partners across the UK and internationally.
+
+## How We Work
+
+We value open science. Where possible, our code and data are shared openly. We are always interested in hearing from prospective PhD students, postdoctoral researchers, and potential collaborators. Please get in touch with group members directly via the [People](/people/) page.
+
+## Contact
+
+For general enquiries, please contact the group lead via the [People](/people/) page.
+
+University of Bristol  
+Department of Electrical and Electronic Engineering and Materials  
+Bristol, UK

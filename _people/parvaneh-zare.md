@@ -4,7 +4,10 @@ layout: person
 permalink: /people/parvaneh-zare/
 group: "Postdoctoral Researchers"
 role: "Postdoc"
-status: previous   # NEW: current | previous
+status: previous
+
+themes:
+  - batteries
 
 excerpt: >
   Research on validation

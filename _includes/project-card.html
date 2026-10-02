@@ -1,25 +1,38 @@
 {% assign project = include.project %}
 
-<div class="archive__item">
-  <h3 class="archive__item-title">
-    <a href="{{ project.url }}">{{ project.title }}</a>
-  </h3>
-
-  <p class="archive__item-excerpt">
-    {{ project.excerpt }}
-  </p>
-
-  {% if project.people %}
-    <p class="archive__meta">
-      People:
-      {% for person_id in project.people %}
-        {% assign person = site.people | where: "slug", person_id | first %}
-        {% if person %}
-          <a href="{{ person.url }}">{{ person.title }}</a>{% unless forloop.last %}, {% endunless %}
-        {% else %}
-          {{ person_id }}{% unless forloop.last %}, {% endunless %}
-        {% endif %}
-      {% endfor %}
-    </p>
+{% comment %} Look up theme colour {% endcomment %}
+{% assign theme_color = "#94a3b8" %}
+{% for t in site.research_themes %}
+  {% if t.id == project.theme %}
+    {% assign theme_color = t.color %}
   {% endif %}
+{% endfor %}
+
+<div class="project-card">
+  <div class="project-card-bar" style="background: {{ theme_color }};"></div>
+  <div class="project-card-body">
+
+    <p class="project-card-title">
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    </p>
+
+    {% if project.excerpt %}
+      <p class="project-card-excerpt">{{ project.excerpt }}</p>
+    {% endif %}
+
+    {% if project.people %}
+      <p class="project-card-people">
+        <strong>Team:</strong>
+        {% for person_id in project.people %}
+          {% assign person = site.people | where: "slug", person_id | first %}
+          {% if person %}
+            <a href="{{ person.url | relative_url }}">{{ person.title }}</a>{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            {{ person_id | replace: "-", " " | capitalize }}{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </p>
+    {% endif %}
+
+  </div>
 </div>

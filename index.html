@@ -1,7 +1,94 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-author_profile: true
+title: ""
 ---
+
+<!-- Hero -->
+<section class="home-hero">
+  <div class="container">
+    <h1>Bristol Energy Systems</h1>
+    <p class="tagline">
+      Applied research in battery systems, solar energy, and energy access
+      at the University of Bristol.
+    </p>
+    <span class="affiliation">
+      🎓 University of Bristol &middot; EEME Department
+    </span>
+  </div>
+</section>
+
+<!-- Research Areas -->
+<section class="home-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Research Areas</h2>
+      <p>Our work spans three interconnected themes in energy systems engineering.</p>
+    </div>
+    <div class="theme-cards">
+      {% for theme in site.research_themes %}
+      <div class="theme-card">
+        <div class="theme-card-bar" style="background: {{ theme.color }};"></div>
+        <div class="theme-card-body">
+          <div class="theme-card-icon">{{ theme.icon }}</div>
+          <h3 class="theme-card-title">{{ theme.name }}</h3>
+          <p class="theme-card-desc">{{ theme.description }}</p>
+          <a href="{{ theme.url | relative_url }}" class="theme-card-link" style="color: {{ theme.color }};">
+            Explore &rarr;
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Recent Publications -->
+<section class="home-section alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Recent Publications</h2>
+    </div>
+
+    {% assign recent_pubs = site.data.publications | sort: "year" | reverse | limit: 4 %}
+    <div class="home-pub-list">
+      {% for pub in recent_pubs %}
+      <div class="home-pub-item">
+        <span class="home-pub-year">{{ pub.year }}</span>
+        <div>
+          <p class="home-pub-title">
+            <a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+          </p>
+          <p class="home-pub-authors">
+            {% for author in pub.authors %}
+              {% assign ap = site.people | where: "slug", author | first %}
+              {% if ap %}{{ ap.title }}{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="{{ '/publications/' | relative_url }}" class="view-all-link">
+      All publications &rarr;
+    </a>
+  </div>
+</section>
+
+<!-- People snapshot -->
+<section class="home-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>The Group</h2>
+      <p>We are a multidisciplinary team working across experiments, modelling, and data science.</p>
+    </div>
+    {% assign academics = site.people | where: "group", "Academic Staff" | where_exp: "p", "p.status != 'previous'" %}
+    <div class="people-grid">
+      {% for person in academics %}
+        {% include person-card.html person=person %}
+      {% endfor %}
+    </div>
+    <a href="{{ '/people/' | relative_url }}" class="view-all-link">
+      Meet the full team &rarr;
+    </a>
+  </div>
+</section>

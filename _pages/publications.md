@@ -1,50 +1,52 @@
 ---
 title: "Publications"
-layout: single
 permalink: /publications/
+layout: page
+description: "Research outputs from the Bristol Energy Systems group."
 ---
 
 {% assign pubs_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
 
-{% for year in pubs_by_year %}
+{% for year_group in pubs_by_year %}
+<div class="pub-year-group">
+  <h2 class="pub-year-heading">{{ year_group.name }}</h2>
+  <div class="pub-list">
+    {% for pub in year_group.items %}
+    <div class="pub-item">
 
-## {{ year.name }}
+      <p class="pub-title">
+        <a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+      </p>
 
-<div class="publications-list">
+      <p class="pub-authors">
+        {% for author in pub.authors %}
+          {% assign ap = site.people | where: "slug", author | first %}
+          {% if ap %}
+            <a href="{{ ap.url | relative_url }}">{{ ap.title }}</a>{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            {{ author }}{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </p>
 
-  {% for pub in year.items %}
+      {% if pub.summary %}
+        <p class="pub-summary">{{ pub.summary }}</p>
+      {% endif %}
 
-  <div class="publication-item">
+      {% if pub.themes %}
+      <div class="mt-2">
+        {% for tid in pub.themes %}
+          {% for t in site.research_themes %}
+            {% if t.id == tid %}
+              <span class="badge badge-{{ tid }}">{{ t.name }}</span>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+      {% endif %}
 
-    <h3 class="publication-title">
-      <a href="{{ pub.url }}">{{ pub.title }}</a>
-    </h3>
-
-    {% if pub.authors %}
-    <p class="publication-authors">
-      {% for author in pub.authors %}
-        {% assign person = site.people | where: "slug", author | first %}
-        {% if person %}
-          <a href="{{ person.url }}">{{ person.title }}</a>{% unless forloop.last %}, {% endunless %}
-        {% else %}
-          {{ author }}{% unless forloop.last %}, {% endunless %}
-        {% endif %}
-      {% endfor %}
-    </p>
-    {% endif %}
-
-    {% if pub.summary %}
-    <div class="publication-summary">
-      {{ pub.summary }}
     </div>
-    {% endif %}
-
+    {% endfor %}
   </div>
-
-  {% endfor %}
-
 </div>
-
-<hr>
-
 {% endfor %}

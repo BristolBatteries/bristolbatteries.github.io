@@ -1,23 +1,31 @@
 ---
 title: "Projects"
-layout: single
 permalink: /projects/
+layout: page
+description: "Research projects across the Bristol Energy Systems group."
 ---
 
-## Current Projects
-
-<div class="projects-grid">
 {% assign current = site.projects | where: "status", "current" %}
-{% for p in current %}
-  {% include project-card.html project=p %}
-{% endfor %}
-</div>
+{% assign past    = site.projects | where: "status", "past" %}
 
-## Past Projects
-
-<div class="projects-grid">
-{% assign past = site.projects | where: "status", "past" %}
-{% for p in past %}
-  {% include project-card.html project=p %}
-{% endfor %}
+{% if current.size > 0 %}
+<div class="projects-group">
+  <h2 class="projects-group-header">Active Projects</h2>
+  <div class="projects-grid">
+    {% for project in current %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
 </div>
+{% endif %}
+
+{% if past.size > 0 %}
+<div class="projects-group">
+  <h2 class="projects-group-header">Completed Projects</h2>
+  <div class="projects-grid">
+    {% for project in past %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

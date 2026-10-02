@@ -1,6 +1,7 @@
 ---
 title: "SHINE"
-status: current   # current | past
+status: current
+theme: energy-access
 excerpt: "Sustainable, Holistic and Inclusive Energy Systems for Well-being"
 
 people:

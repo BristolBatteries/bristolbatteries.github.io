@@ -1,110 +1,96 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# =============================================================================
+# Site Configuration
+# Bristol Energy Systems – University of Bristol
+# =============================================================================
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Bristol Batteries
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Someone should think up a short tag-line for the Bristol Batteries
-  group to put here (_config.yml) It will appear in the document head
-  meta (for Google search results) and in the feed.xml site
-  description.
+title:       "Bristol Energy Systems"
+description: "Research in battery systems, solar energy, and energy access at the University of Bristol, EEME Department."
+url:         "https://bristolbatteries.github.io"
+baseurl:     ""
+
 github_username: BristolBatteries
-minimal_mistakes_skin: sunrise
-search: true
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# =============================================================================
+# Research Themes
+# To add a new theme:
+#   1. Add an entry here
+#   2. Create _pages/research/<id>.md with layout: theme and theme_id: <id>
+#   3. Tag people, projects, and publications with the theme id
+# =============================================================================
+research_themes:
+  - id:          batteries
+    name:        Batteries
+    color:       "#2563eb"
+    icon:        "⚡"
+    url:         /research/batteries/
+    description: >
+      Modelling, characterisation, and management of lithium-ion and
+      next-generation battery systems.
 
+  - id:          solar
+    name:        Solar
+    color:       "#d97706"
+    icon:        "☀️"
+    url:         /research/solar/
+    description: >
+      Photovoltaic systems, solar energy conversion, and grid integration.
+
+  - id:          energy-access
+    name:        Energy Access
+    color:       "#059669"
+    icon:        "🌍"
+    url:         /research/energy-access/
+    description: >
+      Sustainable energy solutions for communities without reliable electricity access.
+
+# =============================================================================
+# Collections
+# =============================================================================
 collections:
   people:
     output: true
+    permalink: /people/:name/
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects/:name/
 
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-
-author:
-  name   : "Bristol Batteries"
-  avatar : "/assets/images/logo.jpg"
-  bio    : "Representing battery research at the University of Bristol"
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://bristolbatteries.github.io"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/BristolBatteries"
-
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-
+# =============================================================================
+# Defaults
+# =============================================================================
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
-      layout: single
-      author_profile: true
+      layout: page
+  - scope:
+      path: "_people"
+      type: people
+    values:
+      layout: person
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: project
 
-# category_archive:
-#   type: liquid
-#   path: /categories/
-# tag_archive:
-#   type: liquid
-#   path: /tags/
+# =============================================================================
+# Build Settings
+# =============================================================================
+markdown:  kramdown
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude editor backup files
+exclude:
+  - "*.~undo-tree~"
+  - ".*.~undo-tree~"
+  - Gemfile.lock
+  - vendor/

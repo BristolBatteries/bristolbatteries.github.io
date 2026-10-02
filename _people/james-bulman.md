@@ -4,7 +4,10 @@ layout: person
 permalink: /people/james-bulman/
 group: "PhD Students"
 role: "PhD student"
-status: current   # NEW: current | previous
+status: current
+
+themes:
+  - batteries
 
 excerpt: >
   Research on degradation

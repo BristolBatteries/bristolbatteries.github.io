@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-brand">{{ site.title }}</div>
+        <p class="footer-desc">{{ site.description }}</p>
+      </div>
+
+      <div>
+        <div class="footer-col-heading">Research</div>
+        <nav class="footer-links">
+          {% for theme in site.research_themes %}
+          <a href="{{ theme.url | relative_url }}">{{ theme.name }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+
+      <div>
+        <div class="footer-col-heading">Site</div>
+        <nav class="footer-links">
+          <a href="{{ '/people/' | relative_url }}">People</a>
+          <a href="{{ '/publications/' | relative_url }}">Publications</a>
+          <a href="{{ '/projects/' | relative_url }}">Projects</a>
+          <a href="{{ '/about/' | relative_url }}">About</a>
+          {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+          {% endif %}
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      &copy; {{ 'now' | date: "%Y" }} {{ site.title }} &middot; University of Bristol
+    </div>
+  </div>
+</footer>

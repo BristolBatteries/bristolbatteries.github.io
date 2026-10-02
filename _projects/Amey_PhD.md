@@ -1,6 +1,7 @@
 ---
 title: "CHet"
-status: current   # current | past
+status: current
+theme: batteries
 excerpt: "Characterising the Heterogeneous Battery Coefficient"
 
 people:

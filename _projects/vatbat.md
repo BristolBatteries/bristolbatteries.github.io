@@ -1,12 +1,12 @@
 ---
 title: "VaTBat"
-status: past   # current | past
+status: past
+theme: batteries
 excerpt: "Variable Temperature Battery Model Parameterisation"
 
 people:
   - alastair-hales
   - mark-blyth
-  
 
 tags:
   - modelling
@@ -25,4 +25,3 @@ The project acted as an initiation point for a wider programme of work on therma
 During the project, the work developed a stronger focus on entropy characterisation, particularly the measurement and interpretation of reversible heat generation in lithium-ion cells. These results helped clarify how changing temperature conditions affect both the physical behaviour of the cell and the assumptions made during model development.
 
 The outcomes have informed subsequent work on standardising battery model validation, with a particular emphasis on how experimental protocols, thermal boundary conditions and parameterisation environments affect model reliability. By highlighting these issues, the project has helped lay the groundwork for more transparent, robust and comparable validation methods for battery models used in electric vehicles, transport and energy storage.
-

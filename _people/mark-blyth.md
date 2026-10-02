@@ -4,7 +4,10 @@ layout: person
 permalink: /people/mark-blyth/
 group: "Postdoctoral Researchers"
 role: "Postdoc"
-status: current   # NEW: current | previous
+status: current
+
+themes:
+  - batteries
 
 excerpt: >
   Coupled electro-thermal models of heterogeneous cells

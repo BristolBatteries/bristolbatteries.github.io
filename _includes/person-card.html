@@ -1,0 +1,22 @@
+{% assign person = include.person %}
+<div class="person-card{% if person.status == 'previous' %} prev{% endif %}">
+
+  {% if person.image %}
+    <img src="{{ person.image | relative_url }}" alt="{{ person.title }}">
+  {% else %}
+    <div class="person-avatar-placeholder">👤</div>
+  {% endif %}
+
+  <p class="person-card-name">
+    <a href="{{ person.url | relative_url }}">{{ person.title }}</a>
+  </p>
+
+  {% if person.role %}
+    <p class="person-card-role">{{ person.role }}</p>
+  {% endif %}
+
+  {% if person.excerpt %}
+    <p class="person-card-excerpt">{{ person.excerpt }}</p>
+  {% endif %}
+
+</div>

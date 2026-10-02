@@ -1,0 +1,35 @@
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container">
+
+    <a href="{{ '/' | relative_url }}" class="nav-brand">
+      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="{{ site.title }} logo">
+      <span class="nav-brand-name">{{ site.title }}</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+
+      <!-- Research dropdown -->
+      <div class="nav-dropdown">
+        <a href="{{ '/research/' | relative_url }}" class="nav-link">Research ▾</a>
+        <div class="nav-dropdown-menu">
+          {% for theme in site.research_themes %}
+          <a href="{{ theme.url | relative_url }}" class="nav-dropdown-link">
+            <span class="nav-dropdown-dot" style="background:{{ theme.color }};"></span>
+            {{ theme.name }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <a href="{{ '/people/' | relative_url }}" class="nav-link">People</a>
+      <a href="{{ '/publications/' | relative_url }}" class="nav-link">Publications</a>
+      <a href="{{ '/projects/' | relative_url }}" class="nav-link">Projects</a>
+      <a href="{{ '/about/' | relative_url }}" class="nav-link">About</a>
+
+    </div>
+  </div>
+</nav>

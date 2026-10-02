@@ -1,0 +1,137 @@
+---
+layout: default
+---
+
+{% comment %}
+  Research theme page layout.
+  Front matter must include:
+    theme_id:    e.g. batteries
+    theme_color: e.g. #2563eb  (optional – falls back to config lookup)
+{% endcomment %}
+
+{% assign tid = page.theme_id %}
+
+{% comment %} Resolve theme config from site.research_themes {% endcomment %}
+{% assign theme_cfg = nil %}
+{% for t in site.research_themes %}
+  {% if t.id == tid %}
+    {% assign theme_cfg = t %}
+  {% endif %}
+{% endfor %}
+
+{% assign tc = page.theme_color | default: theme_cfg.color | default: "#64748b" %}
+
+<div class="page-content">
+  <div class="container">
+
+    <!-- Hero -->
+    <div class="theme-hero">
+      <span class="theme-label" style="background: {{ tc }};">{{ theme_cfg.name | default: page.title }}</span>
+      <h1>{{ page.title }}</h1>
+      {% if page.lead %}
+        <p class="lead">{{ page.lead }}</p>
+      {% elsif theme_cfg.description %}
+        <p class="lead">{{ theme_cfg.description }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Optional prose intro from page body -->
+    {% if content and content != "" %}
+    <div class="prose theme-section">
+      {{ content }}
+    </div>
+    {% endif %}
+
+    <!-- People in this theme -->
+    {% assign theme_people = site.people | where_exp: "p", "p.themes contains tid" %}
+    {% assign theme_people = theme_people | where_exp: "p", "p.status != 'previous'" %}
+
+    {% if theme_people.size > 0 %}
+    <div class="theme-section">
+      <div class="theme-section-header">
+        <h2>People</h2>
+        <a href="{{ '/people/' | relative_url }}" style="color: {{ tc }};">View all &rarr;</a>
+      </div>
+      <div class="people-grid">
+        {% for person in theme_people %}
+          {% include person-card.html person=person %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Projects in this theme -->
+    {% assign theme_projects = site.projects | where: "theme", tid %}
+    {% assign current_projects = theme_projects | where: "status", "current" %}
+    {% assign past_projects = theme_projects | where: "status", "past" %}
+
+    {% if theme_projects.size > 0 %}
+    <div class="theme-section">
+      <div class="theme-section-header">
+        <h2>Projects</h2>
+        <a href="{{ '/projects/' | relative_url }}" style="color: {{ tc }};">View all &rarr;</a>
+      </div>
+
+      {% if current_projects.size > 0 %}
+        <h3 style="font-size:1rem; color:var(--color-muted); margin-bottom:0.75rem;">Active</h3>
+        <div class="projects-grid">
+          {% for project in current_projects %}
+            {% include project-card.html project=project %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if past_projects.size > 0 %}
+        <h3 style="font-size:1rem; color:var(--color-muted); margin: 1.5rem 0 0.75rem;">Completed</h3>
+        <div class="projects-grid">
+          {% for project in past_projects %}
+            {% include project-card.html project=project %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Publications in this theme -->
+    {% assign all_pubs = site.data.publications | sort: "year" | reverse %}
+    {% assign theme_pubs = "" | split: "" %}
+    {% for pub in all_pubs %}
+      {% if pub.themes contains tid %}
+        {% assign theme_pubs = theme_pubs | push: pub %}
+      {% endif %}
+    {% endfor %}
+
+    {% if theme_pubs.size > 0 %}
+    <div class="theme-section">
+      <div class="theme-section-header">
+        <h2>Publications</h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: {{ tc }};">View all &rarr;</a>
+      </div>
+      <div class="pub-list">
+        {% for pub in theme_pubs %}
+        <div class="pub-item">
+          <p class="pub-title">
+            <a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+          </p>
+          <p class="pub-authors">
+            {% for author in pub.authors %}
+              {% assign ap = site.people | where: "slug", author | first %}
+              {% if ap %}
+                <a href="{{ ap.url | relative_url }}">{{ ap.title }}</a>{% unless forloop.last %}, {% endunless %}
+              {% else %}
+                {{ author }}{% unless forloop.last %}, {% endunless %}
+              {% endif %}
+            {% endfor %}
+            &middot; {{ pub.year }}
+          </p>
+          {% if pub.summary %}
+            <p class="pub-summary">{{ pub.summary }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include nav.html %}
+  <main id="main-content">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+      this.closest('.site-nav').querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

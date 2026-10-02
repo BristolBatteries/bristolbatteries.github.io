@@ -1,6 +1,7 @@
 ---
 title: "MSM"
-status: current   # current | past
+status: current
+theme: batteries
 excerpt: "Multi-scale modelling"
 
 people:
@@ -20,4 +21,4 @@ layout: project
 
 ## Overview
 
-MSM focuses on ...
+MSM focuses on developing multi-scale battery models that connect behaviour at the cell level to performance at the pack level. By bridging these scales, the project aims to improve how battery management systems predict and respond to the complex, coupled thermal and electrochemical dynamics that emerge in real-world operating conditions.
