@@ -2,7 +2,7 @@
 title: "Ishan Raj"
 layout: person
 permalink: /people/ishan-raj/
-group: "Intern"
+group: "Interns"
 role: "Intern"
 status: previous
 

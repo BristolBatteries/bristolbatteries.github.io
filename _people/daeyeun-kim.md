@@ -2,7 +2,7 @@
 title: "Daeyeun Kim"
 layout: person
 permalink: /people/daeyeun-kim/
-group: "Intern"
+group: "Interns"
 role: "Intern"
 status: previous
 

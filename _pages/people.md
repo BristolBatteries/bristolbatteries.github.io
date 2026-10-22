@@ -5,7 +5,7 @@ layout: page
 description: "Meet the Bristol Energy Systems research group."
 ---
 
-{% assign groups = "Academic Staff|Postdoctoral Researchers|PhD Students" | split: "|" %}
+{% assign groups = "Academic Staff|Postdoctoral Researchers|PhD Students|Interns" | split: "|" %}
 
 {% for group_name in groups %}
   {% assign members = site.people | where: "group", group_name | where_exp: "p", "p.status != 'previous'" %}

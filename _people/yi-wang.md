@@ -2,7 +2,7 @@
 title: "Yi Wang"
 layout: person
 permalink: /people/yi-wang/
-group: "Intern"
+group: "Interns"
 role: "Intern"
 status: previous
 

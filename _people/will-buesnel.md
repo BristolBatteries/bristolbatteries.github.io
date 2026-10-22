@@ -2,9 +2,9 @@
 title: "Will Buesnel"
 layout: person
 permalink: /people/will-buesnel/
-group: "Intern"
+group: "Interns"
 role: "Intern"
-status: current
+status: previous
 
 themes:
   - batteries
