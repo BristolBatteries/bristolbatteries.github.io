@@ -11,7 +11,7 @@ themes:
   - energy-access
 
 excerpt: >
-  Team lead; thermal and characterisation background
+  Lab safety advisor; thermal and characterisation background
 
 email: "a.hales@bristol.ac.uk"
 github: "https://github.com/AHales89"
