@@ -21,7 +21,6 @@ research_themes:
   - id:          batteries
     name:        Batteries
     color:       "#2563eb"
-    icon:        "⚡"
     url:         /research/batteries/
     description: >
       Modelling, characterisation, and management of lithium-ion and
@@ -30,7 +29,6 @@ research_themes:
   - id:          solar
     name:        Solar
     color:       "#d97706"
-    icon:        "☀️"
     url:         /research/solar/
     description: >
       Photovoltaic systems, solar energy conversion, and grid integration.
@@ -38,7 +36,6 @@ research_themes:
   - id:          energy-access
     name:        Energy Access
     color:       "#059669"
-    icon:        "🌍"
     url:         /research/energy-access/
     description: >
       Sustainable energy solutions for communities without reliable electricity access.

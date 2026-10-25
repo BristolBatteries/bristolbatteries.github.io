@@ -18,14 +18,12 @@ layout: default
 
           {% if page.email %}
           <div class="person-contact-item">
-            <span>✉</span>
             <a href="mailto:{{ page.email }}">{{ page.email }}</a>
           </div>
           {% endif %}
 
           {% if page.github %}
           <div class="person-contact-item">
-            <span>⌥</span>
             {% if page.github contains "github.com" %}
               <a href="{{ page.github }}" target="_blank" rel="noopener">GitHub</a>
             {% else %}
@@ -36,14 +34,12 @@ layout: default
 
           {% if page.scholar %}
           <div class="person-contact-item">
-            <span>🎓</span>
             <a href="{{ page.scholar }}" target="_blank" rel="noopener">Google Scholar</a>
           </div>
           {% endif %}
 
           {% if page.orcid %}
           <div class="person-contact-item">
-            <span>◎</span>
             {% if page.orcid contains "orcid.org" %}
               <a href="{{ page.orcid }}" target="_blank" rel="noopener">ORCID</a>
             {% else %}

@@ -12,7 +12,6 @@ Our group works across three interconnected research themes. Each theme links to
 <div class="theme-card">
   <div class="theme-card-bar" style="background:{{ theme.color }};"></div>
   <div class="theme-card-body">
-    <div class="theme-card-icon">{{ theme.icon }}</div>
     <h3 class="theme-card-title">{{ theme.name }}</h3>
     <p class="theme-card-desc">{{ theme.description }}</p>
     <a href="{{ theme.url | relative_url }}" class="theme-card-link" style="color:{{ theme.color }};">Explore &rarr;</a>
